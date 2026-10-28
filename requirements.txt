@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+pypdf
+langdetect
+rank-bm25
+pytest
+# Added in later weeks:
+# sentence-transformers
+# chromadb
+# streamlit
+# langchain
