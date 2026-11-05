@@ -1,4 +1,4 @@
-# Evaluation Criteria Table — MASHeritage
+# Evaluation Criteria Table: MASHeritage
 
 | Objective / Requirement ID | Evaluation Criterion | Capability Bucket | Measurement Method | Metric | Threshold | User / Business Outcome |
 |---|---|---|---|---|---|---|
