@@ -36,6 +36,31 @@ See [`docs/risk_analysis.md`](docs/risk_analysis.md).
 ## Evaluation Plan
 80-100 Q&A pairs, 50% English and 50% Malay, including cross-lingual and unanswerable questions. Metrics: Recall@5, MRR, correctness, faithfulness, citation accuracy, abstention rate, language consistency, latency. Baselines: BM25 vs multilingual embeddings vs hybrid.
 
+## Topic 3 Data Engineering Deliverables (Week 3)
+
+In Week 3, the project transitioned from specifications to an executable, reproducible V1 Data Pipeline for **Pathway A (Document / Text)**:
+
+| Deliverable Artefact | Location in Repository | Description & Role |
+|---|---|---|
+| **Runnable Notebook** | [`notebooks/week3_pipeline.ipynb`](notebooks/week3_pipeline.ipynb) | Google Colab executable pipeline: ingestion, inspection, chunking comparison, validation, and repeatability smoke tests. |
+| **Data Inventory** | [`docs/week3_data_inventory.md`](docs/week3_data_inventory.md) | Comprehensive audit of 11 official sources, licenses, character counts, raw/prepared storage separation, and inspection evidence. |
+| **Pipeline Diagram** | [`docs/week3_pipeline_diagram.png`](docs/week3_pipeline_diagram.png) | Visual workflow showing Ingest → Inspect → Prepare → Validate → Lineage with 2 annotated failure points and responses ([Source .mmd](docs/week3_pipeline_diagram.mmd)). |
+| **Pipeline Decisions** | [`docs/week3_pipeline_decisions.md`](docs/week3_pipeline_decisions.md) | Engineering decisions (ETL vs ELT, batch rationale), chunking comparisons, stage contracts, and trade-offs. |
+| **Part B Lineage Manifest** | [`data/week3_manifest.json`](data/week3_manifest.json) | Lineage manifest recording source-to-output SHA-256 transformations and chunk parameters. |
+| **Part C Pipeline Artefacts** | [`data/pipeline_v1/documents/`](data/pipeline_v1/documents/) | Executable pipeline outputs (`prepared_text.jsonl` containing 215 chunks with citations, and `pipeline_manifest.json`). |
+
+### How to Run the Week 3 Pipeline
+1. **Google Colab:** Open `notebooks/week3_pipeline.ipynb` in Colab and execute cells top-to-bottom (zero cost, no API key required).
+2. **Local Terminal:**
+```bash
+# 1. Fetch official source documents with SHA-256 validation
+python src/ingestion/fetch_sources.py
+
+# 2. Inspect outputs
+cat data/raw/source_manifest.json
+cat data/pipeline_v1/documents/pipeline_manifest.json
+```
+
 ## How to Run
 ```bash
 python -m venv .venv && source .venv/bin/activate

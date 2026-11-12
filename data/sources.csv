@@ -1,1 +1,13 @@
-id,title,publisher,url,language,site
+id,title,publisher,url,language,site,doc_type,access_rights
+UNESCO_MY,Malaysia World Heritage properties,UNESCO World Heritage Centre,https://whc.unesco.org/en/statesparties/my/,EN,Malaysia,HTML,Public page; attribute UNESCO
+UNESCO_1223,Melaka and George Town,UNESCO World Heritage Centre,https://whc.unesco.org/en/list/1223/,EN,Melaka and George Town,HTML,UNESCO description CC-BY-SA IGO 3.0
+UNESCO_1012,Kinabalu Park,UNESCO World Heritage Centre,https://whc.unesco.org/en/list/1012/,EN,Kinabalu Park,HTML,UNESCO description CC-BY-SA IGO 3.0
+UNESCO_1013,Gunung Mulu National Park,UNESCO World Heritage Centre,https://whc.unesco.org/en/list/1013/,EN,Gunung Mulu National Park,HTML,UNESCO description CC-BY-SA IGO 3.0
+UNESCO_1396,Lenggong Valley,UNESCO World Heritage Centre,https://whc.unesco.org/en/list/1396/,EN,Lenggong Valley,HTML,UNESCO description CC-BY-SA IGO 3.0
+UNESCO_1014,Niah National Park Caves Complex,UNESCO World Heritage Centre,https://whc.unesco.org/en/list/1014/,EN,Niah National Park,HTML,UNESCO description CC-BY-SA IGO 3.0
+UNESCO_1734,FRIM Forest Park Selangor,UNESCO World Heritage Centre,https://whc.unesco.org/en/list/1734/,EN,FRIM Forest Park Selangor,HTML,UNESCO description CC-BY-SA IGO 3.0
+MOTAC_CULTURE_STATS,Buku Data Sektor Kebudayaan 2022–2024,MOTAC Malaysia,https://www.motac.gov.my/wp-content/uploads/2026/04/Buku-Data-Sektor-Kebudayaan-2022-2024.pdf,MS,Malaysia,PDF,Official public statistical report; check PDF terms
+JWN_REGISTER_MS,Tapak Warisan – National Heritage Register,Jabatan Warisan Negara,https://www.heritage.gov.my/ms/tapak-warisan,MS,Malaysia,HTML,Official public portal; reuse terms not explicit
+JWN_REGISTER_EN,Heritage Sites – National Heritage Register,Jabatan Warisan Negara,https://www.heritage.gov.my/en/tapak-warisan,EN,Malaysia,HTML,Official public portal; reuse terms not explicit
+JWN_ACT_MS,Dasar dan Perundangan – Akta Warisan Kebangsaan,Jabatan Warisan Negara,https://www.heritage.gov.my/ms/info-jwn/dasar-perundangan.html,MS,Malaysia,HTML,Official public portal; check linked document terms
+JWN_ACT_EN,Policy and Legislation – National Heritage Act,Jabatan Warisan Negara,https://www.heritage.gov.my/en/jwn-info/policy-and-legislation.html,EN,Malaysia,HTML,Official public portal; check linked document terms

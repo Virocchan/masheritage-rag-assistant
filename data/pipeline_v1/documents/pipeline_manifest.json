@@ -1,0 +1,121 @@
+{
+  "pipeline_run_id": "run-documents-001",
+  "kind": "documents",
+  "generated_at_utc": "2026-11-12T15:49:20.258249+00:00",
+  "configuration": {
+    "chunk_size": 500,
+    "method": "paragraph-aware"
+  },
+  "input_sources": [
+    {
+      "source_path": "data/raw/sources/JWN_ACT_EN.txt",
+      "source_sha256": "5ff22d1b20430fc2b8cdee6ac049de7123f70007a5cc848811fc86be0e02c23d",
+      "bytes": 436
+    },
+    {
+      "source_path": "data/raw/sources/JWN_ACT_MS.txt",
+      "source_sha256": "825a11a03ed84cbb9badfda48b00e07af11ce3f71f6582873197e55236fdb109",
+      "bytes": 459
+    },
+    {
+      "source_path": "data/raw/sources/JWN_REGISTER_EN.txt",
+      "source_sha256": "a4dfade67f9e3276b1652d26e44650a32780ccff48acf77af02487009eccd4b1",
+      "bytes": 519
+    },
+    {
+      "source_path": "data/raw/sources/JWN_REGISTER_MS.txt",
+      "source_sha256": "03a02d5f91c6ecf86c9a92ed1f6dc38d38fb077c2abe29c0414096aa08e7c990",
+      "bytes": 524
+    },
+    {
+      "source_path": "data/raw/sources/UNESCO_1012.txt",
+      "source_sha256": "adcd7ed29c635e1e9ca24c5a44b4d12675d05fa5c374164e0524bd4bc4951871",
+      "bytes": 12999
+    },
+    {
+      "source_path": "data/raw/sources/UNESCO_1013.txt",
+      "source_sha256": "8bca13139fd414c552eff8f0767ac1ba7521c4d28440a6ccebcfe118b5909ac6",
+      "bytes": 18806
+    },
+    {
+      "source_path": "data/raw/sources/UNESCO_1014.txt",
+      "source_sha256": "acf5ff13c6d007f407074d42ccc8cd986e6b1e3cbe2d4d633dbe5336ea471b41",
+      "bytes": 9320
+    },
+    {
+      "source_path": "data/raw/sources/UNESCO_1223.txt",
+      "source_sha256": "cf748edad71cd2cdfb02d591f1fd0fde6ca813e83f0d7a5084cf55e4b529a422",
+      "bytes": 10161
+    },
+    {
+      "source_path": "data/raw/sources/UNESCO_1396.txt",
+      "source_sha256": "fee72afc3258050b89dbda9b0bbad003a36d669ab6866b066023133e127e8353",
+      "bytes": 8805
+    },
+    {
+      "source_path": "data/raw/sources/UNESCO_1734.txt",
+      "source_sha256": "114ea7702fc07452d0e1651999d971f85b345449a16a81e27e4603dd301a63a8",
+      "bytes": 11599
+    },
+    {
+      "source_path": "data/raw/sources/UNESCO_MY.txt",
+      "source_sha256": "e48a7e2458f22b27b89a338d9808ea68ca35060f7b5a314214556500a6a24927",
+      "bytes": 1877
+    }
+  ],
+  "output_artefacts": [
+    {
+      "output_path": "data/pipeline_v1/documents/prepared_text.jsonl",
+      "output_sha256": "1ea11ebfc58d1033634b26436565aed423b804e5ceb84964966d6a9cca14e1d9",
+      "records": 215,
+      "bytes": 167883
+    }
+  ],
+  "source_output_mapping": [
+    {
+      "source": "data/raw/sources/JWN_ACT_EN.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/JWN_ACT_MS.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/JWN_REGISTER_EN.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/JWN_REGISTER_MS.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1012.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1013.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1014.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1223.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1396.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1734.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_MY.txt",
+      "output": "data/pipeline_v1/documents/prepared_text.jsonl"
+    }
+  ],
+  "status": "SUCCESS"
+}

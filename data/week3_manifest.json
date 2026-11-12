@@ -1,0 +1,91 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-12T15:49:20.256930+00:00",
+  "project": "MASHeritage",
+  "pathway": "A-document-text",
+  "chunk_method": "paragraph-aware-char-500",
+  "chunk_size_chars": 500,
+  "source_count": 11,
+  "prepared_chunk_count": 215,
+  "records": [
+    {
+      "source": "data/raw/sources/JWN_ACT_EN.txt",
+      "output": "data/processed/JWN_ACT_EN_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "5ff22d1b20430fc2b8cdee6ac049de7123f70007a5cc848811fc86be0e02c23d",
+      "output_sha256": "5ff22d1b20430fc2b8cdee6ac049de7123f70007a5cc848811fc86be0e02c23d"
+    },
+    {
+      "source": "data/raw/sources/JWN_ACT_MS.txt",
+      "output": "data/processed/JWN_ACT_MS_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "825a11a03ed84cbb9badfda48b00e07af11ce3f71f6582873197e55236fdb109",
+      "output_sha256": "825a11a03ed84cbb9badfda48b00e07af11ce3f71f6582873197e55236fdb109"
+    },
+    {
+      "source": "data/raw/sources/JWN_REGISTER_EN.txt",
+      "output": "data/processed/JWN_REGISTER_EN_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "a4dfade67f9e3276b1652d26e44650a32780ccff48acf77af02487009eccd4b1",
+      "output_sha256": "a4dfade67f9e3276b1652d26e44650a32780ccff48acf77af02487009eccd4b1"
+    },
+    {
+      "source": "data/raw/sources/JWN_REGISTER_MS.txt",
+      "output": "data/processed/JWN_REGISTER_MS_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "03a02d5f91c6ecf86c9a92ed1f6dc38d38fb077c2abe29c0414096aa08e7c990",
+      "output_sha256": "03a02d5f91c6ecf86c9a92ed1f6dc38d38fb077c2abe29c0414096aa08e7c990"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1012.txt",
+      "output": "data/processed/UNESCO_1012_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "adcd7ed29c635e1e9ca24c5a44b4d12675d05fa5c374164e0524bd4bc4951871",
+      "output_sha256": "adcd7ed29c635e1e9ca24c5a44b4d12675d05fa5c374164e0524bd4bc4951871"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1013.txt",
+      "output": "data/processed/UNESCO_1013_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "8bca13139fd414c552eff8f0767ac1ba7521c4d28440a6ccebcfe118b5909ac6",
+      "output_sha256": "8bca13139fd414c552eff8f0767ac1ba7521c4d28440a6ccebcfe118b5909ac6"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1014.txt",
+      "output": "data/processed/UNESCO_1014_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "acf5ff13c6d007f407074d42ccc8cd986e6b1e3cbe2d4d633dbe5336ea471b41",
+      "output_sha256": "acf5ff13c6d007f407074d42ccc8cd986e6b1e3cbe2d4d633dbe5336ea471b41"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1223.txt",
+      "output": "data/processed/UNESCO_1223_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "cf748edad71cd2cdfb02d591f1fd0fde6ca813e83f0d7a5084cf55e4b529a422",
+      "output_sha256": "cf748edad71cd2cdfb02d591f1fd0fde6ca813e83f0d7a5084cf55e4b529a422"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1396.txt",
+      "output": "data/processed/UNESCO_1396_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "fee72afc3258050b89dbda9b0bbad003a36d669ab6866b066023133e127e8353",
+      "output_sha256": "fee72afc3258050b89dbda9b0bbad003a36d669ab6866b066023133e127e8353"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_1734.txt",
+      "output": "data/processed/UNESCO_1734_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "114ea7702fc07452d0e1651999d971f85b345449a16a81e27e4603dd301a63a8",
+      "output_sha256": "114ea7702fc07452d0e1651999d971f85b345449a16a81e27e4603dd301a63a8"
+    },
+    {
+      "source": "data/raw/sources/UNESCO_MY.txt",
+      "output": "data/processed/UNESCO_MY_clean.txt",
+      "processing": "paragraph-aware-char-500",
+      "source_sha256": "e48a7e2458f22b27b89a338d9808ea68ca35060f7b5a314214556500a6a24927",
+      "output_sha256": "e48a7e2458f22b27b89a338d9808ea68ca35060f7b5a314214556500a6a24927"
+    }
+  ],
+  "prepared_export": "data/processed/prepared_text.jsonl",
+  "prepared_export_sha256": "1ea11ebfc58d1033634b26436565aed423b804e5ceb84964966d6a9cca14e1d9"
+}
