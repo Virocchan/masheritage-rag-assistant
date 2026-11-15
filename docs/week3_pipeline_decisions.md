@@ -23,7 +23,13 @@ This V1 Data Engineering pipeline directly implements the data foundation design
 
 ---
 
-## 3. Part B Transformation Comparison & Evidence
+## 3. Part B Transformation Comparison & Evidence (Step B3)
+
+### Step B3 Checkpoint Table: Transformation Decision Comparison
+
+| Approach / Configuration A | Approach / Configuration B | Observed Evidence | Selected Approach and Trade-off |
+|---|---|---|---|
+| **Fixed-Character Chunking**<br>(`size=500` strict character window) | **Paragraph-Aware Chunking**<br>(`size=500` max, preserving natural `\n\n` paragraph boundaries) | • **Fixed**: 18 chunks produced. Sentences, years, and proper nouns severed mid-clause (e.g. cutting off UNESCO OUV criteria numbers).<br>• **Paragraph-Aware**: 24 chunks produced. Preserves atomic paragraphs and semantic section headings (`Outstanding Universal Value`, `Criterion (ii)`). | **Selected Approach**: Paragraph-Aware Chunking (`paragraph-aware-char-500`).<br><br>**Justification linked to Topic 2**: Directly supports **FR1** (factual correctness) and **FR3/RAI3** (section-level grounding), preventing partial-context hallucination.<br><br>**Trade-off Accepted**: Accepts higher chunk count variance (+33% chunks) and minor sub-500 character chunks to guarantee coherent contextual boundaries. |
 
 In Part B, two document chunking strategies were evaluated on `UNESCO_1223.txt` (Melaka and George Town, 8,844 characters):
 

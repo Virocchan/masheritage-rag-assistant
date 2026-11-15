@@ -2,17 +2,24 @@
 
 **Selected pathway:** Pathway A — Document / Text (Unstructured Heritage Corpus)  
 **Project Application:** Bilingual (English/Bahasa Malaysia) Malaysian Heritage Q&A RAG Assistant  
-**Traceability Mapping:**
-- **FR1 (Heritage Q&A):** Authoritative descriptions of Malaysia's 6 inscribed UNESCO World Heritage properties.
-- **FR2 (Cross-Lingual Retrieval):** Bilingual corpus spanning official English (UNESCO, JWN English) and Bahasa Malaysia (JWN Malay register & policy, MOTAC).
-- **FR3 & RAI3 (Source Citations & Grounding):** Granular provenance tracking (Source ID, Canonical URL, SHA-256 fingerprint, publisher).
-- **FR5 (Heritage Terminology):** National Heritage Act (Akta 645) terminology and Malay heritage classifications (*warisan kebangsaan*, *tapak warisan*, *kriteria OUV*).
-- **NFR4 (Reproducible Source Updates):** Deterministic, automated scraping and preprocessing pipeline executing in < 15 minutes.
-- **RAI1 (English/Malay Parity):** Stratified multilingual evaluation and explicit tracking of language distribution.
 
 ---
 
-## 1. Corpus Inventory Table (Step A4 Standard)
+## 1. Step A1 Checkpoint: Requirements to Data Needs Mapping
+
+| Requirement ID | Needed Information / Feature | Candidate Source | Why Usable / Constraint |
+|---|---|---|---|
+| **FR1 (Heritage Q&A)** | Authoritative property descriptions, historical background, and Outstanding Universal Value (OUV) criteria for Malaysia's 6 inscribed World Heritage sites. | UNESCO World Heritage Centre property documents (`whc.unesco.org/en/list/1223`, etc.) | **Authority & Coverage**: Official global registry, comprehensive English coverage.<br>**Permissions**: Public reuse under CC-BY-SA IGO 3.0. |
+| **FR2 (Cross-Lingual Retrieval)** | Official Bahasa Malaysia heritage nomenclature, statutory registers, and site descriptions to answer Malay queries against English documents and vice versa. | Jabatan Warisan Negara portal (`heritage.gov.my`) and National Heritage Register | **Authority**: Official Malaysian federal heritage authority.<br>**Constraint**: Concise summaries rather than full parallel translations; requires cross-lingual embedding retrieval. |
+| **FR3 & RAI3 (Citations & Grounding)** | Source document identity, canonical URLs, section anchors, and cryptographic integrity hashes for every chunk. | Source document metadata headers and SHA-256 fingerprints | **Grounding**: Required to verify every factual claim against official source texts and prevent hallucinated citations. |
+| **FR4 & RAI2 (Scope Refusal)** | Clear domain boundaries of Malaysian World Heritage documentation to decline out-of-scope queries (e.g. ticket booking, tours). | Curated official corpus of 11 approved heritage documents | **Scope Safety**: Bounded knowledge base ensures the assistant can reliably abstain when evidence is missing. |
+| **FR5 (Heritage Terminology)** | Statutory definitions of *warisan kebangsaan*, *tapak warisan*, and legal protection criteria under Malaysian law. | National Heritage Act 2005 (Akta 645) official policy documentation | **Domain Precision**: Authoritative legal definitions for cultural, natural, and archaeological heritage terms. |
+| **NFR4 (Reproducible Updates)** | Standardized text format with repeatable automated ingestion without rebuilding unrelated components. | Clean UTF-8 text extractions from web sources with HTTP rate-limiting | **Maintainability**: Allows updating corpus in < 15 minutes via automated batch ingestion. |
+| **RAI1 (English/Malay Parity)** | Balanced bilingual coverage and explicit metadata tags per document language. | Stratified corpus with language labels (`EN`, `MS`) | **Fairness**: Enables measuring and controlling the retrieval accuracy gap between English and Malay queries. |
+
+---
+
+## 2. Step A4 Checkpoint: Corpus Data Inventory Table
 
 | Source ID | Filename / URL | Type and purpose | Version / date / owner | Access / rights | Inspection evidence |
 |---|---|---|---|---|---|
@@ -31,7 +38,7 @@
 
 ---
 
-## 2. In-Depth Inspection Observations (Step A3 Evidence)
+## 3. In-Depth Inspection Observations (Step A3 Evidence)
 
 ### Inspection Record 1: English Representative Artefact (`UNESCO_1223.txt`)
 - **Origin & Format:** Clean UTF-8 text extracted from UNESCO World Heritage Centre property page.
@@ -49,7 +56,7 @@
 
 ---
 
-## 3. Storage Hierarchy & Lineage Separation
+## 4. Storage Hierarchy & Lineage Separation
 
 | Storage Stage | Directory Location | Committed to Git? | Contents & Policy |
 |---|---|---|---|
@@ -60,7 +67,7 @@
 
 ---
 
-## 4. Responsible AI & Corpus Quality Reflection
+## 5. Responsible AI & Corpus Quality Reflection
 
 1. **Language Asymmetry (RAI1):** UNESCO's documentation is English-first and contains extensive historical, environmental, and geological descriptions (77,062 total characters across 7 files). Jabatan Warisan Negara (JWN) provides authoritative Malay administrative terminology, but the texts are concise (1,938 total characters across 4 files). The corpus is therefore **not a sentence-aligned parallel corpus**. In Topic 4, retrieval parity will be evaluated using cross-lingual queries (Malay query to English document) rather than assuming equal corpus volume.
 2. **Licensing & Redistribution Rights:** UNESCO texts are distributed under CC-BY-SA IGO 3.0. JWN and MOTAC materials are public government documents; however, raw scraped HTML contains dynamic UI elements. Scraping extracts strictly the informational text blocks, preserving source URLs for mandatory attribution.
