@@ -1,6 +1,6 @@
 {
   "pipeline_version": "week3-v1",
-  "generated_at_utc": "2026-11-12T15:48:47.936496+00:00",
+  "generated_at_utc": "2026-11-15T18:05:42.815405+00:00",
   "successful_sources": 11,
   "failed_sources": [],
   "records": [
@@ -18,7 +18,7 @@
       "sha256": "e48a7e2458f22b27b89a338d9808ea68ca35060f7b5a314214556500a6a24927",
       "http_status": 200,
       "final_url": "https://whc.unesco.org/en/statesparties/my/",
-      "fetched_at_utc": "2026-11-12T15:48:28.555806+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:26.523003+00:00"
     },
     {
       "id": "UNESCO_1223",
@@ -30,11 +30,11 @@
       "doc_type": "HTML",
       "access_rights": "UNESCO description CC-BY-SA IGO 3.0",
       "local_path": "data/raw/sources/UNESCO_1223.txt",
-      "characters": 8844,
-      "sha256": "cf748edad71cd2cdfb02d591f1fd0fde6ca813e83f0d7a5084cf55e4b529a422",
+      "characters": 8835,
+      "sha256": "9bb6206c5834694ab86302aa0546c5f91a63fb3186bcbfef57d382c45a0e8508",
       "http_status": 200,
       "final_url": "https://whc.unesco.org/en/list/1223/",
-      "fetched_at_utc": "2026-11-12T15:48:30.792156+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:27.747520+00:00"
     },
     {
       "id": "UNESCO_1012",
@@ -50,7 +50,7 @@
       "sha256": "adcd7ed29c635e1e9ca24c5a44b4d12675d05fa5c374164e0524bd4bc4951871",
       "http_status": 200,
       "final_url": "https://whc.unesco.org/en/list/1012/",
-      "fetched_at_utc": "2026-11-12T15:48:32.961948+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:28.968657+00:00"
     },
     {
       "id": "UNESCO_1013",
@@ -66,7 +66,7 @@
       "sha256": "8bca13139fd414c552eff8f0767ac1ba7521c4d28440a6ccebcfe118b5909ac6",
       "http_status": 200,
       "final_url": "https://whc.unesco.org/en/list/1013/",
-      "fetched_at_utc": "2026-11-12T15:48:34.432885+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:30.197349+00:00"
     },
     {
       "id": "UNESCO_1396",
@@ -82,7 +82,7 @@
       "sha256": "fee72afc3258050b89dbda9b0bbad003a36d669ab6866b066023133e127e8353",
       "http_status": 200,
       "final_url": "https://whc.unesco.org/en/list/1396/",
-      "fetched_at_utc": "2026-11-12T15:48:36.051240+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:31.437067+00:00"
     },
     {
       "id": "UNESCO_1014",
@@ -98,7 +98,7 @@
       "sha256": "acf5ff13c6d007f407074d42ccc8cd986e6b1e3cbe2d4d633dbe5336ea471b41",
       "http_status": 200,
       "final_url": "https://whc.unesco.org/en/list/1014/",
-      "fetched_at_utc": "2026-11-12T15:48:37.849296+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:32.617677+00:00"
     },
     {
       "id": "UNESCO_1734",
@@ -114,7 +114,7 @@
       "sha256": "114ea7702fc07452d0e1651999d971f85b345449a16a81e27e4603dd301a63a8",
       "http_status": 200,
       "final_url": "https://whc.unesco.org/en/list/1734/",
-      "fetched_at_utc": "2026-11-12T15:48:39.229571+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:34.062889+00:00"
     },
     {
       "id": "JWN_REGISTER_MS",
@@ -130,7 +130,7 @@
       "sha256": "03a02d5f91c6ecf86c9a92ed1f6dc38d38fb077c2abe29c0414096aa08e7c990",
       "http_status": 200,
       "final_url": "https://www.heritage.gov.my/ms/tapak-warisan",
-      "fetched_at_utc": "2026-11-12T15:48:41.566405+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:36.222906+00:00"
     },
     {
       "id": "JWN_REGISTER_EN",
@@ -146,7 +146,7 @@
       "sha256": "a4dfade67f9e3276b1652d26e44650a32780ccff48acf77af02487009eccd4b1",
       "http_status": 200,
       "final_url": "https://www.heritage.gov.my/en/tapak-warisan",
-      "fetched_at_utc": "2026-11-12T15:48:43.606842+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:38.390274+00:00"
     },
     {
       "id": "JWN_ACT_MS",
@@ -162,7 +162,7 @@
       "sha256": "825a11a03ed84cbb9badfda48b00e07af11ce3f71f6582873197e55236fdb109",
       "http_status": 200,
       "final_url": "https://www.heritage.gov.my/ms/info-jwn/dasar-perundangan.html",
-      "fetched_at_utc": "2026-11-12T15:48:45.303854+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:40.158415+00:00"
     },
     {
       "id": "JWN_ACT_EN",
@@ -178,7 +178,7 @@
       "sha256": "5ff22d1b20430fc2b8cdee6ac049de7123f70007a5cc848811fc86be0e02c23d",
       "http_status": 200,
       "final_url": "https://www.heritage.gov.my/en/jwn-info/policy-and-legislation.html",
-      "fetched_at_utc": "2026-11-12T15:48:46.931409+00:00"
+      "fetched_at_utc": "2026-11-15T18:05:41.810327+00:00"
     }
   ]
 }
