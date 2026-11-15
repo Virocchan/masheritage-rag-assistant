@@ -7,7 +7,7 @@ def test_required_files_exist():
         "README.md",
         "data/SOURCES.md",
         "data/sources.csv",
-        "docs/project_scope.md",
+        "docs/week1_project_scope.md",
         "docs/risk_analysis.md",
         "docs/week2_requirements.md",
         "docs/week2_architecture_decisions.md",
