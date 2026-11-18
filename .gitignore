@@ -6,3 +6,4 @@ __pycache__/
 vectorstore/
 data/raw/*.pdf
 
+week3_project/
