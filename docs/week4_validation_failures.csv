@@ -1,0 +1,17 @@
+schema_context,column,check,check_number,failure_case,index
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,18,3
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,33,5
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,36,14
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,9,30
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,37,70
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,9,75
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,36,77
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,38,82
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,32,107
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,38,112
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,38,165
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,25,167
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,11,188
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,9,195
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,9,197
+Column,char_count,chunk length below minimum useful semantic threshold (40 chars),0,12,200

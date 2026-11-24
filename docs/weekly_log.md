@@ -15,3 +15,12 @@
 - Executed repeatability verification (Cell 9) asserting bit-identical fingerprints and mapping invariance across independent runs.
 - Documented pipeline diagram (`docs/week3_pipeline_diagram.png`) with failure modes, and recorded architectural choices and stage contracts in `docs/week3_pipeline_decisions.md`.
 
+## Week 4 (Data Quality and Responsible Data Practices)
+- Loaded and cryptographically verified the Topic 3 prepared-data hand-off (`data/prepared_chunks.jsonl` and `data/chunks.pkl`, 215 chunks).
+- Built chunk-quality inventory in `notebooks/week4_quality.ipynb` profiling missingness, character counts, whitespace noise, and web boilerplate.
+- Enforced repeatable data contracts using **Pandera** (`pa.DataFrameSchema`), logging findings to `docs/week4_validation_failures.csv`.
+- Executed exact SHA-256 hash deduplication, identifying 26 redundant boilerplate chunks (12.1%) and preserving provenance in `docs/week4_duplicate_review.csv`.
+- Produced clean Topic 4 corpora: `data/prepared_chunks_clean.jsonl` and `data/chunks_clean.pkl` (189 unique chunks).
+- Conducted representation and coverage analysis across sources, sites, and languages; generated `docs/week4_coverage_by_source.png`.
+- Analyzed empirical Historical, Representation (98.4% EN vs 1.6% MS), and Measurement bias risks, tracing their propagation through RAG vector retrieval and generation.
+- Formulated full audit report `docs/week4_data_quality_report.md` with explicit **GO WITH CONDITIONS** Quality Gate Decision.
